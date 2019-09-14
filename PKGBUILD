@@ -1,3 +1,5 @@
+# Maintainer: Poscat <poscat@mail.poscat.moe>
+
 pkgname=sni-modifier
 pkgver=0.0.0
 pkgrel=1

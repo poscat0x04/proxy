@@ -28,17 +28,17 @@ import (
 
 const (
 	// certs
-	caCert = "CA.crt"
-	caKey  = "CA.key"
+	caCert = "/etc/sni-modifier/CA.crt"
+	caKey  = "/etc/sni-modifier/CA.key"
 	// dns
-	gfwDNS = "1.1.1.1:853"
+	gfwDNS = "8.8.8.8:853"
 	// time
 	certExpire   = time.Hour * 24 * 30 // a month
 	dialTimeout  = 5 * time.Second
 	cacheAddrTtl = 5 * time.Minute
 	// misc
 	proxyAddr = "localhost:8080"
-	logLevel  = log.InfoLevel
+	logLevel  = log.WarnLevel
 )
 
 var (

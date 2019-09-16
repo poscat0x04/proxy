@@ -6,3 +6,7 @@ Upon receiving a connection, the proxy first tries to connect to the target doma
 
 To use this you should first generate a CA cert/privkey pair and place them under `/etc/sni-modifier/`. Then compile the program and run it.  
 You should be able to get a running socks5 server at localhost:8080.
+
+## limitations
+Some censored domains do not support connecting with SNI disabled so this method won't work for them.  
+Also note that this is not gonna work for layer 3 censorship (such as ip blackholing)
